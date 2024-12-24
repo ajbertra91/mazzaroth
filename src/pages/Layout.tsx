@@ -4,9 +4,8 @@ import Footer from '@components/Footer';
 
 const links = [
     { label: 'Home', href: '/' },
-    { label: 'Magi', href: '/magi' },
-    { label: 'Star', href: '/star' },
     { label: 'History', href: '/history' },
+    { label: 'Magi', href: '/magi' },
     { label: 'Mazzaroth', href: '/mazzaroth' },
 ];
 

@@ -1,34 +1,29 @@
-// import ByLine from "@components/ByLine";
-// import Quote from "@components/Quote";
-// import LinkWithArrow from '@components/LinkWithArrow';
+import ByLine from "@components/ByLine";
+import Quote from "@components/Quote";
 
 
 const MagiPage = () => {
     return (
         <section className="magi-page page-container">
-            <h1 className="text-5xl font-semibold tracking-tight text-gray-900">The Magi. Wise-men from the East</h1>
-            {/* <p className="text-base text-gray-700 leading-relaxed">There are a few questions that need to be answered in the story of the birth of Jesus as recorded in the Gospel of Matthew.</p>
-
+            <h1 className="text-5xl font-semibold tracking-tight text-gray-900">The Magi: Wise-men from the East</h1>
+            <p className="text-base text-gray-700 leading-relaxed mt-4">We first see references to wise men in the book of Daniel.</p>
             <Quote>
-                "Now after Jesus was born in Bethlehem of Judea in the days of Herod the king, behold, <strong>wise men from the East</strong> came to Jerusalem,
-                saying, "Where is He who has been born King of the Jews? <strong>For we have seen His star in the East</strong> and have come to worship Him."
-                When Herod the king heard this, <strong>he was troubled, and all Jerusalem with him.</strong>"
-                <ByLine>Matthew 2:1-3 (NKJV - emphasis added)</ByLine>
+                "Then the king gave the command to call the magicians, the astrologers, the sorcerers, and the Chaldeans to tell the king his dreams. So they came and stood before the king."
+                <ByLine>Daniel 2:2</ByLine>
             </Quote>
-
-            <h2 className="text-4xl font-medium tracking-tight text-gray-900">Questions:</h2>
-            <h3 className="text-3xl font-medium tracking-tight text-gray-800">Question 1:</h3>
-            <p className="text-base text-gray-700 leading-relaxed">
-                <LinkWithArrow url="/magi">Who are the "Wise men?"</LinkWithArrow>
-            </p>
-            <h3 className="text-3xl font-medium tracking-tight text-gray-800">Question 2:</h3>
-            <p className="text-base text-gray-700 leading-relaxed">
-                <LinkWithArrow url="/star">What do you mean, "they saw His star?"</LinkWithArrow>
-            </p>
-            <h3 className="text-3xl font-medium tracking-tight text-gray-800">Question 3:</h3>
-            <p className="text-base text-gray-700 leading-relaxed">
-                <LinkWithArrow url="/history">Why was the whole population of Jerusalem troubled by these guys?"</LinkWithArrow>
-            </p> */}
+            <h2 className="text-4xl font-medium tracking-tight text-gray-900">"Wise men"</h2>
+            <ul className="list-disc pl-6 space-y-4 text-gray-800">
+                <li>
+                    <p className="text-base text-gray-700 leading-relaxed"><strong><em>Chaldeans</em></strong> - a title, advisory leadership</p>
+                </li>
+                <li>
+                    <p className="text-base text-gray-700 leading-relaxed"><strong><em>chartom</em></strong> - diviner, magician, astrologer, practicer of the occult</p>
+                </li>
+                <li>
+                    <p className="text-base text-gray-700 leading-relaxed"><strong><em>ashshaph</em></strong> - necromancer, conjurer</p>
+                </li>
+            </ul>
+            <p className="text-base text-gray-700 leading-relaxed">The practices of these groups probably overlapped extensively. Daniel referred to them generally as "wise men" (Daniel 2:12-14, 18, 24[2x], 48; 4:6, 18; 5:7-8, 15)</p>
         </section>
     )
 }

@@ -12,6 +12,20 @@ const HistoryPage = () => {
             <p className="text-base text-gray-700 leading-relaxed  mt-4">
                 We need to go back to the Babylonian Exile of the Isrealies to start to understand what is going on.
             </p>
+            <ul className="list-disc pl-6 space-y-4 text-gray-800">
+                <li>
+                    <p className="text-base text-gray-700 leading-relaxed"><strong>612 BCE</strong> - Nineveh falls to an alliance of Babylon and Media.</p>
+                </li>
+                <li>
+                    <p className="text-base text-gray-700 leading-relaxed"><strong>609 BCE</strong> - Pharaoh Necho leads an army against Assyria. Josiah fights Necho and is killed
+                        (<em>2 Chronicles 35:20-24</em>).</p>
+                </li>
+                <li>
+                    <p className="text-base text-gray-700 leading-relaxed"><strong>606 BCE</strong> - Battle of Carchemesh: Nebuchadnezzar vs. Pharaoh Necho on the west bank of the
+                        Euphrates (<em>Jeremiah 46:1-6</em>). Jehoiakim fettered (<em>2 Chronicles 36:5-8</em>).</p>
+                </li>
+            </ul>
+
             <p className="text-base text-gray-700 leading-relaxed  mt-4">
                 There were three key Babylonian sieges of Jerusalem under Nebuchadnezzar II:
             </p>
