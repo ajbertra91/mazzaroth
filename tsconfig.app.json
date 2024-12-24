@@ -21,6 +21,9 @@
       "@pages/*": [
         "src/pages/*"
       ],
+      "@appTypes/*": [
+        "src/types/*"
+      ],
       "@utils/*": [
         "src/utils/*"
       ]

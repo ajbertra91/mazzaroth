@@ -1,8 +1,12 @@
 import { createAPIMethod } from "./createAPIMethod";
+import { SignData } from '@appTypes/SignData';
 
 export const getSign = createAPIMethod<
-    { id: string }, // the input
-    { name: string } // the output
+    { signId: string }, // the input
+    {
+        error: string | null,
+        sign: SignData,
+    } // the output
 >({
     method: "GET",
     url: "/sign",
