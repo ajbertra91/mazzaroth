@@ -3,10 +3,10 @@ import Header from '@components/Header';
 import Footer from '@components/Footer';
 
 const links = [
-    { label: 'Home', href: '/' },
-    { label: 'History', href: '/history' },
-    { label: 'Magi', href: '/magi' },
-    { label: 'Mazzaroth', href: '/stars' },
+    { label: 'Home', href: '/mazzaroth' },
+    { label: 'History', href: '/mazzaroth/history' },
+    { label: 'Magi', href: '/mazzaroth/magi' },
+    { label: 'Mazzaroth', href: '/mazzaroth/stars' },
 ];
 
 const Layout = () => {

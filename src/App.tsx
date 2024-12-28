@@ -11,7 +11,7 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <BrowserRouter>
+    <BrowserRouter basename="/mazzaroth">
       <Routes>
         {/* Main layout */}
         <Route path="/" element={<Layout />}>

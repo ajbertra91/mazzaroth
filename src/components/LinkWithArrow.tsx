@@ -8,7 +8,7 @@ type LinkWithArrowProps = {
 
 const LinkWithArrow: React.FC<LinkWithArrowProps> = ({ url, children }) => {
     return (
-        <p className="text-base text-gray-700 leading-relaxed">
+        <span className="text-base text-gray-700 leading-relaxed">
             <Link
                 to={url}
                 className="flex items-center text-blue-500 hover:text-blue-700 transition group"
@@ -18,7 +18,7 @@ const LinkWithArrow: React.FC<LinkWithArrowProps> = ({ url, children }) => {
                     className="h-5 w-5 transform transition-transform duration-300 group-hover:translate-x-2"
                 />
             </Link>
-        </p>
+        </span>
     );
 };
 
