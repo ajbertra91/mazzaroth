@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 type NavLink = {
     label: string;
@@ -23,7 +24,7 @@ const Header: React.FC<HeaderProps> = ({ links }) => {
                     <ul className="flex space-x-8 text-sm font-medium text-gray-600">
                         {links.map((link, index) => (
                             <li key={index} className="hover:text-black transition">
-                                <a href={link.href}>{link.label}</a>
+                                <Link to={link.href}>{link.label}</Link>
                             </li>
                         ))}
                     </ul>
