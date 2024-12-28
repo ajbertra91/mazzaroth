@@ -19,7 +19,7 @@ const App = () => (
           <Route path="/magi" element={<MagiPage />} />
           <Route path="/star" element={<StarPage />} />
           <Route path="/history" element={<HistoryPage />} />
-          <Route path="/mazzaroth" element={<MazzarothPage />} />
+          <Route path="/stars" element={<MazzarothPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

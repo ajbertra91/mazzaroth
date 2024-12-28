@@ -27,7 +27,7 @@ const HomePage = () => {
             </p>
             <h3 className="text-3xl font-medium tracking-tight text-gray-800">Question 3:</h3>
             <p className="text-base text-gray-700 leading-relaxed">
-                <LinkWithArrow url="/mazzaroth">What do you mean, "they saw His star?"</LinkWithArrow>
+                <LinkWithArrow url="/stars">What do you mean, "they saw His star?"</LinkWithArrow>
             </p>
         </section>
     )

@@ -6,7 +6,7 @@ const links = [
     { label: 'Home', href: '/' },
     { label: 'History', href: '/history' },
     { label: 'Magi', href: '/magi' },
-    { label: 'Mazzaroth', href: '/mazzaroth' },
+    { label: 'Mazzaroth', href: '/stars' },
 ];
 
 const Layout = () => {
