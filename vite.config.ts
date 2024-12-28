@@ -23,6 +23,14 @@ export default defineConfig(({ mode }) => {
         plugins: [tailwindcss(), autoprefixer()],
       },
     },
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks: undefined,
+        },
+      },
+    },
+    assetsInclude: ['_redirects'], // Ensure the `_redirects` file is included
     server: {
       port: 3000, // Run on localhost:3000
     },
