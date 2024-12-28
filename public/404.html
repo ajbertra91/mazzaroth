@@ -1,0 +1,7 @@
+<script>
+    // Redirect all 404s to index.html to let React handle routing
+    const pathname = window.location.pathname;
+    const basePath = '/mazzaroth'; // Set this to your repository name
+    const newPath = pathname.startsWith(basePath) ? pathname : `${basePath}/index.html`;
+    window.location.replace(newPath);
+</script>

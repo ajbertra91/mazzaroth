@@ -30,7 +30,7 @@ export default defineConfig(({ mode }) => {
         },
       },
     },
-    assetsInclude: ['_redirects'], // Ensure the `_redirects` file is included
+    assetsInclude: ['404.html'],
     server: {
       port: 3000, // Run on localhost:3000
     },
