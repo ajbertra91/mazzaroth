@@ -11,29 +11,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Clean Install
-        run: rm -rf node_modules dist && npm ci
-
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 20
           cache: 'npm'
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build Project
         run: npm run build
 
       - name: Add .nojekyll File
-        run: echo "" > ./dist/.nojekyll  # Create the .nojekyll file in the dist folder1
+        run: echo "" > ./dist/.nojekyll
 
       - name: Verify Build Output
-        run: ls -l dist  # Optional: Check the contents of the dist folder for debugging
+        run: ls -l dist  # Debugging step to verify build output
 
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v3
@@ -48,7 +45,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
-      - name: Download artifact
+      - name: Download Artifact
         uses: actions/download-artifact@v3
         with:
           name: production-files
