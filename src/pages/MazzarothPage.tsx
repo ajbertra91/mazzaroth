@@ -1,5 +1,6 @@
 import AriesConstellation from "@components/AriesConstellation";
 import ByLine from "@components/ByLine";
+import CancerConstellation from "@components/CancerConstellation";
 import GeminiConstellation from "@components/GeminiConstellation";
 import Quote from "@components/Quote";
 import TaurusConstellation from "@components/TaurusConstellation";
@@ -154,6 +155,8 @@ const MazzarothPage = () => {
             <TaurusConstellation />
             <br />
             <GeminiConstellation />
+            <br />
+            <CancerConstellation />
             <br />
 
         </section>
