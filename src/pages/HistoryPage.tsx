@@ -6,40 +6,40 @@ import Quote from "@components/Quote";
 const HistoryPage = () => {
     return (
         <section className="magi-page page-container">
-            <h1 className="text-5xl font-semibold tracking-tight text-gray-900">The History.</h1>
-            <p className="text-base text-gray-700 leading-relaxed mt-4">Why are the people of Jerusalem troubled?</p>
+            <h1 className="text-5xl font-semibold tracking-tight text-fuchsia-500 bg-teal-300 inline-block">The History</h1>
+            <p className="text-base text-gray-300 leading-relaxed mt-4">Why are the people of Jerusalem troubled?</p>
 
-            <p className="text-base text-gray-700 leading-relaxed  mt-4">
+            <p className="text-base text-gray-300 leading-relaxed  mt-4">
                 We need to go back to the Babylonian Exile of the Isrealies to start to understand what is going on.
             </p>
-            <ul className="list-disc pl-6 space-y-4 text-gray-800">
+            <ul className="list-disc pl-6 space-y-4 text-gray-200">
                 <li>
-                    <p className="text-base text-gray-700 leading-relaxed"><strong>612 BCE</strong> - Nineveh falls to an alliance of Babylon and Media.</p>
+                    <p className="text-base text-gray-300 leading-relaxed"><strong>612 BCE</strong> - Nineveh falls to an alliance of Babylon and Media.</p>
                 </li>
                 <li>
-                    <p className="text-base text-gray-700 leading-relaxed"><strong>609 BCE</strong> - Pharaoh Necho leads an army against Assyria. Josiah fights Necho and is killed
+                    <p className="text-base text-gray-300 leading-relaxed"><strong>609 BCE</strong> - Pharaoh Necho leads an army against Assyria. Josiah fights Necho and is killed
                         (<em>2 Chronicles 35:20-24</em>).</p>
                 </li>
                 <li>
-                    <p className="text-base text-gray-700 leading-relaxed"><strong>606 BCE</strong> - Battle of Carchemesh: Nebuchadnezzar vs. Pharaoh Necho on the west bank of the
+                    <p className="text-base text-gray-300 leading-relaxed"><strong>606 BCE</strong> - Battle of Carchemesh: Nebuchadnezzar vs. Pharaoh Necho on the west bank of the
                         Euphrates (<em>Jeremiah 46:1-6</em>). Jehoiakim fettered (<em>2 Chronicles 36:5-8</em>).</p>
                 </li>
             </ul>
 
-            <p className="text-base text-gray-700 leading-relaxed  mt-4">
+            <p className="text-base text-gray-300 leading-relaxed  mt-4">
                 There were three key Babylonian sieges of Jerusalem under Nebuchadnezzar II:
             </p>
-            <ol className="list-decimal pl-6 space-y-4 text-gray-800">
+            <ol className="list-decimal pl-6 space-y-4 text-gray-200">
                 <li>
                     <strong>First Siege (605 BCE):</strong>
-                    <p className="text-base text-gray-700 leading-relaxed">
+                    <p className="text-base text-gray-300 leading-relaxed">
                         Event: Nebuchadnezzar besieged Jerusalem during the reign of Jehoiakim. Some nobles, including Daniel and
                         other young elites, were taken into exile (<em>Daniel 1:1-2</em>).
                     </p>
                 </li>
                 <li>
                     <strong>Second Siege (597 BCE):</strong>
-                    <p className="text-base text-gray-700 leading-relaxed">
+                    <p className="text-base text-gray-300 leading-relaxed">
                         Event: After Jehoiakim's rebellion, Nebuchadnezzar laid siege again. Jehoiakim's son, Jehoiachin, was
                         captured and taken to Babylon, along with treasures from the temple. Zedekiah was installed as a vassal
                         king (<em>2 Kings 24:10-17</em>).
@@ -47,7 +47,7 @@ const HistoryPage = () => {
                 </li>
                 <li>
                     <strong>Third Siege (587/586 BCE):</strong>
-                    <p className="text-base text-gray-700 leading-relaxed">
+                    <p className="text-base text-gray-300 leading-relaxed">
                         Event: Zedekiah rebelled, prompting Nebuchadnezzar's final siege. Jerusalem was destroyed, the temple
                         burned, and much of the population exiled to Babylon (<em>2 Kings 25:1-21</em>).
                     </p>
@@ -55,7 +55,7 @@ const HistoryPage = () => {
             </ol>
 
 
-            <p className="text-base text-gray-700 leading-relaxed  mt-4">
+            <p className="text-base text-gray-300 leading-relaxed  mt-4">
                 This final siege is referred to several times in scripture:
             </p>
             <Quote>
@@ -83,14 +83,14 @@ const HistoryPage = () => {
                 <ByLine>Daniel 1:1-2 (NKJV)</ByLine>
             </Quote>
 
-            <p className="text-base text-gray-700 leading-relaxed  mt-4">
+            <p className="text-base text-gray-300 leading-relaxed  mt-4">
                 During the adventures of Daniel and his colleagues in exile, Daniel is revealed to have the ability to interpret private and unknowable dreams. This earned him a place as the prime minister of Babylon. And later after the Medo-Persians conquored Babylon he was called out of retirement and put in charge of the Magi. Throughout his life God revealed to him amazing and accurate prophecies about the coming Messiah and Eschatology. And to prove Himself worthy of trust God also revealed specific details of the period of time commonly referred to as the "400 silent years" between the Testments. These details are so accurate that many secular scholars believe that the book of Daniel had to have been written afterward. Not before.
             </p>
-            <p className="text-base text-gray-700 leading-relaxed  mt-4">
+            <p className="text-base text-gray-300 leading-relaxed  mt-4">
                 In short, in his book, he details the rise of Alexander the Great and his 4 subsequent generals: Ptolemy, Seleucus, Antigonus, and Cassander. And the battles and politics that were fought between the Ptolemaic Dynasty in Egypt and Seleucid Empire in Persia because these two empires trampled Israel everytime they attacked each other.
             </p>
             <Quote>
-                <ul className="list-disc pl-6 space-y-6 text-gray-800">
+                <ul className="list-disc pl-6 space-y-6 text-gray-200">
                     <li>
                         <strong>Ptolemy I Soter</strong>
                         <ul className="list-none pl-4 space-y-2">
@@ -162,11 +162,11 @@ const HistoryPage = () => {
                 </ul>
             </Quote>
 
-            <p className="text-base text-gray-700 leading-relaxed  mt-4">These prophecies also highlight Antiochus IV Epiphanes, who was a ruler of the Seleucid Empire from 175-164 BCE. He is often viewed in Christian theology as a foreshadowing or type of the Antichrist due to his persecution of the Jewish people and his desecration of the Jerusalem Temple. This view is largely rooted in biblical prophecy, particularly in the Book of Daniel, and is echoed in New Testament descriptions of the Antichrist by Jesus and John. There is a lot to unpack here and is tangental to the topic at hand. So, I'm going to skip it.</p>
+            <p className="text-base text-gray-300 leading-relaxed  mt-4">These prophecies also highlight Antiochus IV Epiphanes, who was a ruler of the Seleucid Empire from 175-164 BCE. He is often viewed in Christian theology as a foreshadowing or type of the Antichrist due to his persecution of the Jewish people and his desecration of the Jerusalem Temple. This view is largely rooted in biblical prophecy, particularly in the Book of Daniel, and is echoed in New Testament descriptions of the Antichrist by Jesus and John. There is a lot to unpack here and is tangental to the topic at hand. So, I'm going to skip it.</p>
 
-            <p className="text-base text-gray-700 leading-relaxed  mt-4">The Roman Empire became deeply entangled in the struggles of the Hellenistic kingdoms, including Ptolemaic Egypt and the Seleucid Empire, during the late Hellenistic period. These interactions often led to diplomatic maneuvering, military confrontations, and eventual Roman dominance over these territories. Here are the key battles and events involving Rome, Ptolemaic Egypt, and the Seleucid Empire:</p>
+            <p className="text-base text-gray-300 leading-relaxed  mt-4">The Roman Empire became deeply entangled in the struggles of the Hellenistic kingdoms, including Ptolemaic Egypt and the Seleucid Empire, during the late Hellenistic period. These interactions often led to diplomatic maneuvering, military confrontations, and eventual Roman dominance over these territories. Here are the key battles and events involving Rome, Ptolemaic Egypt, and the Seleucid Empire:</p>
 
-            <ol className="list-decimal pl-6 space-y-4 text-gray-800">
+            <ol className="list-decimal pl-6 space-y-4 text-gray-200">
                 <li>
                     <strong>Rome vs. the Seleucid Empire</strong>
                     <ol className="list-decimal pl-6 space-y-4">
@@ -266,7 +266,7 @@ const HistoryPage = () => {
                 </li>
             </ol>
 
-            <p className="text-base text-gray-700 leading-relaxed  mt-4">One possible answer to our original question: given this history of conflict between Rome and the Seleucid Empire (foremorely known as Persia). If the wise-men, a hereditary caste of priestly king makers, were going to travel into enemy occupied territory safely. Then they would have needed to travel with a large enough military escort to keep the Romans from attacking them. And the people were troubled by what another conflict might mean for them.</p>
+            <p className="text-base text-gray-300 leading-relaxed  mt-4">One possible answer to our original question: given this history of conflict between Rome and the Seleucid Empire (foremorely known as Persia). If the wise-men, a hereditary caste of priestly king makers, were going to travel into enemy occupied territory safely. Then they would have needed to travel with a large enough military escort to keep the Romans from attacking them. And the people were troubled by what another conflict might mean for them.</p>
 
         </section>
     )

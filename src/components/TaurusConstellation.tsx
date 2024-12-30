@@ -26,14 +26,14 @@ const TaurusConstellation = () => {
 
             {/* Stars */}
             {/* stem */}
-            <circle cx="140" cy="480" r="5" fill="#e5e7eb" />
-            <circle cx="150" cy="470" r="5" fill="#e5e7eb" />
-            <circle cx="180" cy="330" r="5" fill="#e5e7eb" />
-            <circle cx="230" cy="250" r="5" fill="#e5e7eb" />
+            <circle cx="140" cy="480" r="5" fill="#d946ef" />
+            <circle cx="150" cy="470" r="5" fill="#d946ef" />
+            <circle cx="180" cy="330" r="5" fill="#d946ef" />
+            <circle cx="230" cy="250" r="5" fill="#d946ef" />
             {/* bottom branch */}
             <circle cx="255" cy="240" r="8" fill="white" />
-            <circle cx="285" cy="225" r="5" fill="#e5e7eb" />
-            <circle cx="350" cy="190" r="5" fill="#e5e7eb" />
+            <circle cx="285" cy="225" r="5" fill="#d946ef" />
+            <circle cx="350" cy="190" r="5" fill="#d946ef" />
             <circle cx="450" cy="80" r="8" fill="white" />
             {/* bottom right star */}
             <circle cx="345" cy="380" r="8" fill="white" />

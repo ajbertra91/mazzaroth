@@ -44,7 +44,7 @@ const MazzarothPage = () => {
                         <div className="w-74 h-full">{section.component}</div>
                     </div>
                     <div className="w-full md:w-1/2">
-                        <h2 className="text-4xl font-bold mb-4">{section.title}</h2>
+                        <h2 className="text-4xl font-bold text-fuchsia-500 bg-teal-300 inline-block mb-4">{section.title}</h2>
                         {section.description}
                     </div>
                 </section>

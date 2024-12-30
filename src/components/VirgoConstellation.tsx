@@ -26,17 +26,17 @@ const VirgoConstellation = () => {
 
             {/* Stars */}
             <circle cx="31" cy="317" r="8" fill="white" />
-            <circle cx="156" cy="279" r="5" fill="#e5e7eb" />
-            <circle cx="230" cy="286" r="5" fill="#e5e7eb" /> {/* t1 */}
-            <circle cx="335" cy="226" r="5" fill="#e5e7eb" /> {/* t2 */}
+            <circle cx="156" cy="279" r="5" fill="#d946ef" />
+            <circle cx="230" cy="286" r="5" fill="#d946ef" /> {/* t1 */}
+            <circle cx="335" cy="226" r="5" fill="#d946ef" /> {/* t2 */}
             <circle cx="287" cy="174" r="8" fill="white" />
 
-            <circle cx="67" cy="367" r="5" fill="#e5e7eb" />
-            <circle cx="138" cy="352" r="5" fill="#e5e7eb" />
-            <circle cx="153" cy="387" r="5" fill="#e5e7eb" />
+            <circle cx="67" cy="367" r="5" fill="#d946ef" />
+            <circle cx="138" cy="352" r="5" fill="#d946ef" />
+            <circle cx="153" cy="387" r="5" fill="#d946ef" />
             <circle cx="272" cy="352" r="8" fill="white" /> {/* b1 */}
-            <circle cx="378" cy="255" r="5" fill="#e5e7eb" /> {/* b2 */}
-            <circle cx="433" cy="228" r="5" fill="#e5e7eb" />
+            <circle cx="378" cy="255" r="5" fill="#d946ef" /> {/* b2 */}
+            <circle cx="433" cy="228" r="5" fill="#d946ef" />
             <circle cx="489" cy="150" r="8" fill="white" />
         </svg >
     );

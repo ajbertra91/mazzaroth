@@ -20,16 +20,16 @@ const GeminiConstellation = () => {
             <line x1="80" y1="180" x2="57" y2="94" stroke="#e5e7eb" strokeWidth="1" />
             <line x1="57" y1="94" x2="50" y2="75" stroke="#e5e7eb" strokeWidth="1" />
             {/* Stars */}
-            <circle cx="80" cy="432" r="5" fill="#e5e7eb" />
-            <circle cx="105" cy="370" r="5" fill="#e5e7eb" />
+            <circle cx="80" cy="432" r="5" fill="#d946ef" />
+            <circle cx="105" cy="370" r="5" fill="#d946ef" />
             <circle cx="125" cy="340" r="8" fill="white" />
             <circle cx="215" cy="310" r="8" fill="white" />
             <circle cx="460" cy="290" r="8" fill="white" />
             <circle cx="465" cy="190" r="8" fill="white" />
-            <circle cx="305" cy="130" r="5" fill="#e5e7eb" />
-            <circle cx="237" cy="151" r="5" fill="#e5e7eb" />
+            <circle cx="305" cy="130" r="5" fill="#d946ef" />
+            <circle cx="237" cy="151" r="5" fill="#d946ef" />
             <circle cx="80" cy="180" r="8" fill="white" />
-            <circle cx="57" cy="94" r="5" fill="#e5e7eb" />
+            <circle cx="57" cy="94" r="5" fill="#d946ef" />
             <circle cx="50" cy="75" r="8" fill="white" />
         </svg>
     );

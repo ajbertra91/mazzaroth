@@ -12,10 +12,10 @@ const AriesConstellation = () => {
             <line x1="355" y1="300" x2="340" y2="420" stroke="#e5e7eb" strokeWidth="1" />
             <line x1="340" y1="420" x2="320" y2="450" stroke="#e5e7eb" strokeWidth="1" />
             {/* Stars */}
-            <circle cx="240" cy="100" r="5" fill="#e5e7eb" />
+            <circle cx="240" cy="100" r="5" fill="#d946ef" />
             <circle cx="355" cy="300" r="8" fill="white" />
             <circle cx="340" cy="420" r="8" fill="white" />
-            <circle cx="320" cy="450" r="5" fill="#e5e7eb" />
+            <circle cx="320" cy="450" r="5" fill="#d946ef" />
         </svg>
     );
 };

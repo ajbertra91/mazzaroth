@@ -29,16 +29,16 @@ const LeoConstellation = () => {
             <circle cx="48" cy="148" r="8" fill="white" />
             <circle cx="170" cy="158" r="8" fill="white" />
             <circle cx="309" cy="255" r="8" fill="white" />
-            <circle cx="331" cy="312" r="5" fill="#e5e7eb" />
-            <circle cx="394" cy="437" r="5" fill="#e5e7eb" />
+            <circle cx="331" cy="312" r="5" fill="#d946ef" />
+            <circle cx="394" cy="437" r="5" fill="#d946ef" />
             <circle cx="310" cy="400" r="8" fill="white" />
-            <circle cx="135" cy="230" r="5" fill="#e5e7eb" />
-            <circle cx="78" cy="269" r="5" fill="#e5e7eb" />
-            <circle cx="55" cy="330" r="5" fill="#e5e7eb" />
-            <circle cx="330" cy="198" r="5" fill="#e5e7eb" />
-            <circle cx="396" cy="187" r="5" fill="#e5e7eb" />
-            <circle cx="484" cy="210" r="5" fill="#e5e7eb" />
-            <circle cx="444" cy="247" r="5" fill="#e5e7eb" />
+            <circle cx="135" cy="230" r="5" fill="#d946ef" />
+            <circle cx="78" cy="269" r="5" fill="#d946ef" />
+            <circle cx="55" cy="330" r="5" fill="#d946ef" />
+            <circle cx="330" cy="198" r="5" fill="#d946ef" />
+            <circle cx="396" cy="187" r="5" fill="#d946ef" />
+            <circle cx="484" cy="210" r="5" fill="#d946ef" />
+            <circle cx="444" cy="247" r="5" fill="#d946ef" />
             <circle cx="412" cy="222" r="8" fill="white" />
         </svg>
     );
