@@ -1,47 +1,58 @@
-import AriesConstellation from "@components/AriesConstellation";
-import ByLine from "@components/ByLine";
-import CancerConstellation from "@components/CancerConstellation";
-import GeminiConstellation from "@components/GeminiConstellation";
-import LeoConstellation from "@components/LeoConstellation";
-import Quote from "@components/Quote";
-import TaurusConstellation from "@components/TaurusConstellation";
-import VirgoConstellation from "@components/VirgoConstellation";
-
+import { useState, useEffect } from "react";
+import { sections } from "@utils/getSections";
 
 const MazzarothPage = () => {
+    const [visibleSections, setVisibleSections] = useState(new Set<number>());
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    const sectionIndex = parseInt(entry.target.getAttribute("data-index") || "0", 10);
+                    if (entry.isIntersecting) {
+                        setVisibleSections((prev) => new Set([...prev, sectionIndex]));
+                    }
+                });
+            },
+            {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.75,
+            }
+        );
+
+        const targets = document.querySelectorAll(".mazzaroth-section");
+        targets.forEach((target) => observer.observe(target));
+
+        return () => {
+            targets.forEach((target) => observer.unobserve(target));
+        };
+    }, []);
+
     return (
-        <section className="magi-page page-container">
-            <h1 className="text-5xl font-semibold tracking-tight text-gray-900">The Mazzaroth</h1>
-            <p className="text-base text-gray-700 leading-relaxed mt-4">What is it? Why do we care?</p>
+        <div className="relative w-full bg-black">
+            {sections.map((section, index) => (
+                <section
+                    key={index}
+                    data-index={index}
+                    className="mazzaroth-section flex flex-col md:flex-row items-center justify-center h-screen px-4 md:px-12 py-8 md:py-16 bg-black text-white"
+                >
+                    <div
+                        className={`w-full md:w-1/2 flex justify-center mb-8 md:mb-0 transform transition-opacity duration-1000 ${visibleSections.has(index) ? "opacity-100" : "opacity-0"
+                            }`}
+                    >
+                        <div className="w-64 h-64 md:w-96 md:h-96">{section.component}</div>
+                    </div>
+                    <div className="w-full md:w-1/2">
+                        <h2 className="text-4xl font-bold mb-4">{section.title}</h2>
+                        {section.description}
+                    </div>
+                </section>
+            ))}
+        </div>
+    );
 
-            <Quote>
-                "In the beginning God created the heaven and the earth"
-                <ByLine>Genesis 1:1 (NKJV)</ByLine>
-            </Quote>
-            <Quote>
-                "Can you bind the cluster of the Pleiades, Or loose the belt of Orion? Can you bring out Mazzaroth in its season? Or can you guide the Great Bear with its cubs? Do you know the ordinances of the heavens? Can you set their dominion over the earth?"
-                <ByLine>Job 38:31-33 (NKJV)</ByLine>
-            </Quote>
-            <Quote>
-                "Out of heaven He let you hear His voice, that He might instruct you;"
-                <ByLine>Deuteronomy 4:26 (NKJV)</ByLine>
-            </Quote>
-            <Quote>
-                "The heavens declare the glory of God; And the firmament shows His handiwork. Day unto day utters speech, And night unto night reveals knowledge. [There is] no speech nor language [Where] their voice is not heard. Their line has gone out through all the earth, And their words to the end of the world. In them He has set a tabernacle for the sun, Which [is] like a bridegroom coming out of his chamber, [And] rejoices like a strong man to run its race. Its rising [is] from one end of heaven, And its circuit to the other end; And there is nothing hidden from its heat."
-                <ByLine>Psalm 19:1-6 (NKJV)</ByLine>
-            </Quote>
-
-            <h2 className="text-4xl font-semibold tracking-tight text-gray-900">What is the Mazzaroth?</h2>
-
-            <p className="text-base text-gray-700 leading-relaxed mt-4">The Mazzaroth refers to the constellations that follow the circular path of the sun over the course of a year. The moon, in turn, travels this path roughly once every month.</p>
-
-            <p className="text-base text-gray-700 leading-relaxed mt-4">According to the Bible, the stars were purposefully placed in their positions by God to symbolically communicate the Great Salvation He provided for humanity. In our solar system, there are 88 recognized constellations, which are traditionally divided into 12 zodiacal "houses." Each house includes three associated decans (related constellations), forming 12 groups, or families, of four constellations each. These zodiacal houses and their related decans can be interpreted as expressing prophetic characteristics of the Christ.</p>
-
-            <p className="text-base text-gray-700 leading-relaxed mt-4">God put the prophecy of His salvation in the night sky at creation!</p>
-
-            <h2 className="text-4xl font-semibold tracking-tight text-gray-900 mt-4">The 12 Zodiacal Houses and Their Decans</h2>
-
-            <ol className="list-decimal pl-8 space-y-6 text-gray-800 text-base leading-relaxed mt-4">
+    {/* <ol className="list-decimal pl-8 space-y-6 text-gray-800 text-base leading-relaxed mt-4">
                 <li>
                     <strong className="text-lg font-semibold text-gray-900">Aries (The Ram)</strong>
                     <p className="text-gray-700">Prophetic Interpretation: Symbolizes Christ as the Lamb of God who takes away the sins of the world (<em>John 1:29</em>).</p>
@@ -150,23 +161,7 @@ const MazzarothPage = () => {
                         <li className="text-gray-700">Perseus (The Hero): Represents Christ as the deliverer of His people (also linked to Aries).</li>
                     </ul>
                 </li>
-            </ol>
-
-            <AriesConstellation />
-            <br />
-            <TaurusConstellation />
-            <br />
-            <GeminiConstellation />
-            <br />
-            <CancerConstellation />
-            <br />
-            <LeoConstellation />
-            <br />
-            <VirgoConstellation />
-            <br />
-
-        </section>
-    )
+            </ol> */}
 }
 
 export default MazzarothPage;
