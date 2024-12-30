@@ -35,13 +35,13 @@ const MazzarothPage = () => {
                 <section
                     key={index}
                     data-index={index}
-                    className="mazzaroth-section flex flex-col md:flex-row items-center justify-center h-screen px-4 md:px-12 py-8 md:py-16 bg-black text-white"
+                    className="mazzaroth-section flex flex-col md:flex-row items-center justify-center gap-40 h-screen px-4 md:px-12 py-8 md:py-16 bg-black text-white"
                 >
                     <div
-                        className={`w-full md:w-1/2 flex justify-center mb-8 md:mb-0 transform transition-opacity duration-1000 ${visibleSections.has(index) ? "opacity-100" : "opacity-0"
+                        className={`w-full md:w-1/2 flex justify-center items-center mb-8 md:mb-0 transform transition-opacity duration-1000 ${visibleSections.has(index) ? "opacity-100" : "opacity-0"
                             }`}
                     >
-                        <div className="w-64 h-64 md:w-96 md:h-96">{section.component}</div>
+                        <div className="w-74 h-full">{section.component}</div>
                     </div>
                     <div className="w-full md:w-1/2">
                         <h2 className="text-4xl font-bold mb-4">{section.title}</h2>
