@@ -1,6 +1,7 @@
 import AriesConstellation from "@components/AriesConstellation";
 import ByLine from "@components/ByLine";
 import CancerConstellation from "@components/CancerConstellation";
+import Circles from "@components/Circles";
 import Description from "@components/Description";
 import GeminiConstellation from "@components/GeminiConstellation";
 import LeoConstellation from "@components/LeoConstellation";
@@ -12,7 +13,7 @@ import VirgoConstellation from "@components/VirgoConstellation";
 export const sections = [
     {
         title: "The Mazzaroth",
-        component: null,
+        component: <Circles />,
         description: (
             <Description>
                 <p>

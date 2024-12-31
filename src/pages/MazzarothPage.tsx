@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { sections } from "@utils/getSections";
+import SvgDefs from "@components/SvgDefs";
 
 const MazzarothPage = () => {
     const [visibleSections, setVisibleSections] = useState(new Set<number>());
@@ -30,26 +31,29 @@ const MazzarothPage = () => {
     }, []);
 
     return (
-        <div className="relative w-full bg-black">
-            {sections.map((section, index) => (
-                <section
-                    key={index}
-                    data-index={index}
-                    className="mazzaroth-section flex flex-col md:flex-row items-center justify-center gap-40 h-screen px-4 md:px-12 py-8 md:py-16 bg-black text-white"
-                >
-                    <div
-                        className={`w-full md:w-1/2 flex justify-center items-center mb-8 md:mb-0 transform transition-opacity duration-1000 ${visibleSections.has(index) ? "opacity-100" : "opacity-0"
-                            }`}
+        <>
+            <SvgDefs />
+            <div className="relative w-full bg-white">
+                {sections.map((section, index) => (
+                    <section
+                        key={index}
+                        data-index={index}
+                        className="mazzaroth-section flex flex-col md:flex-row items-center justify-center gap-40 h-screen px-4 md:px-12 py-8 md:py-16 bg-black text-white"
                     >
-                        <div className="w-74 h-full">{section.component}</div>
-                    </div>
-                    <div className="w-full md:w-1/2">
-                        <h2 className="text-4xl font-bold text-fuchsia-500 bg-teal-300 inline-block mb-4">{section.title}</h2>
-                        {section.description}
-                    </div>
-                </section>
-            ))}
-        </div>
+                        <div
+                            className={`w-full md:w-1/2 flex justify-center items-center mb-8 md:mb-0 transform transition-opacity duration-1000 ${visibleSections.has(index) ? "opacity-100" : "opacity-0"
+                                }`}
+                        >
+                            <div className="w-74 h-full">{section.component}</div>
+                        </div>
+                        <div className="w-full md:w-1/2">
+                            <h2 className="text-4xl font-bold text-fuchsia-500 bg-teal-300 inline-block mb-4">{section.title}</h2>
+                            {section.description}
+                        </div>
+                    </section>
+                ))}
+            </div>
+        </>
     );
 
     {/* <ol className="list-decimal pl-8 space-y-6 text-gray-800 text-base leading-relaxed mt-4">
