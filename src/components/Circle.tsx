@@ -1,6 +1,6 @@
 const Circle = () => {
     return (
-        <div className="w-64 h-64 border-4 border-teal-300 rounded-full bg-transparent"></div>
+        <div className="w-64 h-64 border-4 border-[#40f384] rounded-full bg-transparent"></div>
     );
 }
 

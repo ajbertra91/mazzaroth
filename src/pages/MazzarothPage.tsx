@@ -18,7 +18,7 @@ const MazzarothPage = () => {
             {
                 root: null,
                 rootMargin: "0px",
-                threshold: 0.75,
+                threshold: 0.6,
             }
         );
 
@@ -44,7 +44,7 @@ const MazzarothPage = () => {
                             className={`w-full md:w-1/2 flex justify-center items-center mb-8 md:mb-0 transform transition-opacity duration-1000 ${visibleSections.has(index) ? "opacity-100" : "opacity-0"
                                 }`}
                         >
-                            <div className="w-74 h-full">{section.component}</div>
+                            <div className="w-74 h-full border-animation">{section.component}</div>
                         </div>
                         <div className="w-full md:w-1/2">
                             {/* <h2 className="text-4xl font-bold text-fuchsia-500 bg-teal-300 inline-block mb-4">{section.title}</h2> */}

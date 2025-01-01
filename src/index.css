@@ -1,5 +1,10 @@
 @import "./fonts.css";
+@import "./border-animation.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+svg {
+    border-radius: 10px;
+}

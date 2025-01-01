@@ -21,6 +21,9 @@ export default {
           '-webkit-text-fill-color': 'transparent',
           '-webkit-background-clip': 'text',
         },
+        '.border-animation': {
+          animation: 'spin 3s linear infinite',
+        },
       });
     }),
   ],

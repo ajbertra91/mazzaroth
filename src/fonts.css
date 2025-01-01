@@ -5,6 +5,7 @@
     font-style: normal;
 
 }
+
 @font-face {
     font-family: 'Space Mono';
     src: url('./assets/fonts/spaceMono_regular_normal.woff2') format('woff2');
@@ -32,4 +33,3 @@
     font-weight: 700;
     font-style: italic;
 }
-  

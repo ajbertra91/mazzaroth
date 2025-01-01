@@ -113,7 +113,7 @@ export const sections = [
             <Description>
                 <p>
                     Symbolizes Christ's return in judgment and strength - "His glory is like a firstborn
-                    bull, And his horns like the horns of the wild ox;" <em>Deut. 33:17a</em>.
+                    bull, And his horns like the horns of the wild ox (aurochs);" <em>Deut. 33:17a</em>.
                 </p>
             </Description>
         ),
