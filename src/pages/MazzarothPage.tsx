@@ -47,7 +47,8 @@ const MazzarothPage = () => {
                             <div className="w-74 h-full">{section.component}</div>
                         </div>
                         <div className="w-full md:w-1/2">
-                            <h2 className="text-4xl font-bold text-fuchsia-500 bg-teal-300 inline-block mb-4">{section.title}</h2>
+                            {/* <h2 className="text-4xl font-bold text-fuchsia-500 bg-teal-300 inline-block mb-4">{section.title}</h2> */}
+                            <h2 className="text-[#fff8ee] bg-gradient-to-r from-[#9660f9] to-[#40f384] text-transparent-bg -ml-0.5 pb-[3px] text-[50px] font-normal leading-[65px]">{section.title}</h2>
                             {section.description}
                         </div>
                     </section>

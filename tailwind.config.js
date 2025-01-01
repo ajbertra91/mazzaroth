@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin');
+
 export default {
   mode: 'jit',
   content: [
@@ -6,8 +8,21 @@ export default {
     './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        space: ['"Space Mono"', 'sans-serif'],
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        '.text-transparent-bg': {
+          '-webkit-text-fill-color': 'transparent',
+          '-webkit-background-clip': 'text',
+        },
+      });
+    }),
+  ],
 }
 
