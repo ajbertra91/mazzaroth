@@ -22,7 +22,7 @@
     position: absolute;
     height: calc(100% + 6px); /* Parent height + 6px (3px per side) */
     width: calc(100% + 6px);  /* Parent width + 6px (3px per side) */
-    background-image: conic-gradient(from var(--angle), transparent 80%, #9660f9);
+    background-image: conic-gradient(from var(--angle), black, #25183d 80%, #9660f9);
     top: -3px; /* Offset by -3px to center */
     left: -3px; /* Offset by -3px to center */
     z-index: -1;
