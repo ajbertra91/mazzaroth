@@ -5,7 +5,9 @@ import Circles from "@components/Circles";
 import Description from "@components/Description";
 import GeminiConstellation from "@components/GeminiConstellation";
 import LeoConstellation from "@components/LeoConstellation";
+import LibraConstellation from "@components/LibraConstellation";
 import Quote from "@components/Quote";
+import ScorpioConstellation from "@components/ScorpioConstellation";
 import TaurusConstellation from "@components/TaurusConstellation";
 import VirgoConstellation from "@components/VirgoConstellation";
 
@@ -95,7 +97,7 @@ export const sections = [
         ),
     },
     {
-        title: "Aries (The Ram)",
+        title: "Aries (Ram)",
         component: <AriesConstellation />,
         description: (
             <Description>
@@ -107,7 +109,7 @@ export const sections = [
         ),
     },
     {
-        title: "Taurus (The Bull)",
+        title: "Taurus (Bull)",
         component: <TaurusConstellation />,
         description: (
             <Description>
@@ -119,7 +121,7 @@ export const sections = [
         ),
     },
     {
-        title: "Gemini (The Twins)",
+        title: "Gemini (Twins)",
         component: <GeminiConstellation />,
         description: (
             <Description>
@@ -131,7 +133,7 @@ export const sections = [
         ),
     },
     {
-        title: "Cancer (The Crab)",
+        title: "Cancer (Crab)",
         component: <CancerConstellation />,
         description: (
             <Description>
@@ -142,7 +144,7 @@ export const sections = [
         ),
     },
     {
-        title: "Leo (The Lion)",
+        title: "Leo (Lion)",
         component: <LeoConstellation />,
         description: (
             <Description>
@@ -154,13 +156,79 @@ export const sections = [
         ),
     },
     {
-        title: "Virgo (The Virgin)",
+        title: "Virgo (Virgin)",
         component: <VirgoConstellation />,
         description: (
             <Description>
                 <p>
                     Symbolizes the Virgin Mary and the birth of Christ, the promised seed{" "}
                     <em>(Genesis 3:15)</em>.
+                </p>
+            </Description>
+        ),
+    },
+    {
+        title: "Libra (Scales)",
+        component: <LibraConstellation />,
+        description: (
+            <Description>
+                <p>
+                    Symbolizes the justice of God and the atoning work of Christ, balancing the scales of sin and righteousness.
+                </p>
+            </Description>
+        ),
+    },
+    {
+        title: "Scorpio (Scorpion)",
+        component: <ScorpioConstellation />,
+        description: (
+            <Description>
+                <p>
+                    Symbolizes Satan, the adversary, and the defeat of death through Christ's resurrection.
+                </p>
+            </Description>
+        ),
+    },
+    {
+        title: "Sagittarius (Archer)",
+        component: null,
+        description: (
+            <Description>
+                <p>
+                    Symbolizes Christ as the conquering King, riding forth to judge and make war (<em>Revelation 6:2</em>).
+                </p>
+            </Description>
+        ),
+    },
+    {
+        title: "Capricorn (Goat-Fish)",
+        component: null,
+        description: (
+            <Description>
+                <p>
+                    Symbolizes Christ's death (as the sacrificial goat) and resurrection (life from death).
+                </p>
+            </Description>
+        ),
+    },
+    {
+        title: "Aquarius (Water Bearer)",
+        component: null,
+        description: (
+            <Description>
+                <p>
+                    Symbolizes Christ pouring out the living water of the Holy Spirit (<em>John 7:38-39</em>).
+                </p>
+            </Description>
+        ),
+    },
+    {
+        title: "Pisces (Fish)",
+        component: null,
+        description: (
+            <Description>
+                <p>
+                    Prophetic Interpretation: Symbolizes the Church, made up of those "caught" by Christ as fishers of men (<em>Matthew 4:19</em>).
                 </p>
             </Description>
         ),
