@@ -12,6 +12,9 @@ export default {
       fontFamily: {
         space: ['"Space Mono"', 'sans-serif'],
       },
+      backgroundImage: {
+        'conic-gradient': 'conic-gradient(from 0deg, at 50% 50%, blue, purple, purple, blue)',
+      },
     },
   },
   plugins: [

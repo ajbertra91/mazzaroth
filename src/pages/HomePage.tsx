@@ -1,6 +1,6 @@
 import ByLine from "@components/ByLine";
 import Quote from "@components/Quote";
-import LinkWithArrow from '@components/LinkWithArrow';
+import LinkCard from '@components/LinkCard';
 
 
 const HomePage = () => {
@@ -21,13 +21,13 @@ const HomePage = () => {
             <section className="sm:h-full">
                 <h2 className="text-4xl font-medium tracking-tight text-fuchsia-500 bg-teal-300 inline-block">Questions:</h2>
                 <p className="text-base leading-relaxed mt-4">
-                    <LinkWithArrow url="/history">Why was the whole population of Jerusalem troubled by these guys?"</LinkWithArrow>
+                    <LinkCard url="/history">Why was the whole population of Jerusalem troubled by the wise men?"</LinkCard>
                 </p>
                 <p className="text-base leading-relaxed mt-4">
-                    <LinkWithArrow url="/magi">Who are the "Wise men?"</LinkWithArrow>
+                    <LinkCard url="/magi">Who are the wise men?</LinkCard>
                 </p>
                 <p className="text-base leading-relaxed mt-4">
-                    <LinkWithArrow url="/stars">What do you mean, "they saw His star?"</LinkWithArrow>
+                    <LinkCard url="/stars">What do you mean, "they saw His star?"</LinkCard>
                 </p>
             </section>
         </div>
